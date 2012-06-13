@@ -17,3 +17,6 @@ local.properties
 
 # Java jars
 *.jar
+
+# classpath folder
+.classpath/
