@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="milesLabel">Distance traveled (m/km)</string>
+    <string name="app_name">Mileage Ad-Free</string>
+    <string name="gallonsLabel">Fuel used (g/l)</string>
+    <string name="mileage">Mileage: </string>
+    <string name="mileageView"></string>
+    <string name="mpg">mpg</string>
+    <string name="settings_label">Settings</string>
+    <string name="settings_shortcut">s</string>
+    
+    <string-array name="fuel_list">
+        <item>Gallons</item>
+        <item>Liters</item>
+    </string-array>
+    
+    <string-array name="distance_list">
+    	<item>Miles</item>
+    	<item>Kilometers</item>
+    </string-array>
+    
+    <string-array name="options">
+    	<item>Delete</item>
+    </string-array>
+</resources>
