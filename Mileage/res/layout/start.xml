@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" 
+  android:orientation="vertical"
+  android:background="@drawable/asphalt"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_weight="1">
+    <LinearLayout android:id="@+id/linear1" 
+    	android:orientation="vertical" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent">
+    	
+        <TextView android:text="@string/milesLabel" 
+        	android:id="@+id/mLabel" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:paddingTop="15dip" 
+        	android:textStyle="bold" 
+        	android:textSize="25sp" />
+        	
+        <EditText android:id="@+id/milesEdit" 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="match_parent" 
+        	android:inputType="numberDecimal" 
+        	android:hint="Enter distance travelled" />
+        	
+        <TextView android:text="@string/gallonsLabel" 
+        	android:id="@+id/gLabel" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:textStyle="bold" 
+        	android:textSize="25sp" />
+        	
+        <EditText android:id="@+id/gallonsEdit" 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="match_parent" 
+        	android:inputType="numberDecimal" 
+        	android:hint="Enter fuel used" />
+        
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        	
+        	<LinearLayout android:orientation="vertical" android:layout_weight=".5" android:layout_width="match_parent" android:layout_height="wrap_content">
+        		<TextView android:text="To change settings, press Menu -> Settings" android:padding="10dip" android:id="@+id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        	</LinearLayout>
+        </LinearLayout>
+        
+        <Button android:text="Calculate!" android:id="@+id/calculate" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="35sp"></Button>
+        <TextView android:text="" android:id="@+id/spacer" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        <com.google.ads.AdView android:id="@+id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:adSize="BANNER" ads:adUnitId="a14e3464e1e995a" ads:loadAdOnCreate="true"></com.google.ads.AdView>
+    </LinearLayout>
+    
+</ScrollView>
