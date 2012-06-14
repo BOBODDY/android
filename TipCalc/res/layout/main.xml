@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/scrollView1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:id="@+id/linearLayout2" android:layout_height="wrap_content">
+                <TextView android:text="Amount:     $" android:textSize="20sp" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <EditText android:hint="Bill amount" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/amount" android:inputType="numberDecimal">
+                    <requestFocus></requestFocus>
+                </EditText>
+            </LinearLayout>
+            <TextView android:text="Tip Amount:" android:textSize="45sp" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"></TextView>
+            <RadioGroup android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <RadioButton android:text="15%  " android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/fifteen" android:checked="true"></RadioButton>
+                <RadioButton android:text="20%  " android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/twenty"></RadioButton>
+                <RadioButton android:text="25%" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/twentyfive"></RadioButton>
+            </RadioGroup>
+            <Button android:text="Calculate" android:id="@+id/start" android:layout_width="match_parent" android:layout_height="wrap_content"></Button>
+            <TextView android:text="" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout3" android:layout_height="wrap_content">
+                <TextView android:text="Tip:    $" android:textStyle="bold" android:textSize="30sp" android:id="@+id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:text="0.00" android:textStyle="bold" android:textSize="30sp" android:id="@+id/tipAmount" android:layout_width="wrap_content" android:maxLines="1" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <TextView android:text="" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout4" android:layout_height="wrap_content">
+                <TextView android:text="Total:    $" android:textStyle="bold" android:textSize="30sp" android:id="@+id/total" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:text="0.00" android:textStyle="bold" android:textSize="30sp" android:id="@+id/totalAmount" android:maxLines="1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
