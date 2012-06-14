@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/documentroot" android:layout_margin="0dip"
+    android:fitsSystemWindows="true" android:minHeight="480dip">
+
+<!-- <LinearLayout android:background="@+drawable/blue_frame" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/FrameHolder"> -->
+ <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/debug"
+    />
+
+<!--<ListView android:id="@+id/android:list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadingEdge="none" android:dividerHeight="1dip" android:divider="#00FFFFFF" android:cacheColorHint="#00000000">
+</ListView>-->
+
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:columnWidth="90dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+/>
+
+<CheckBox android:id="@+id/activeFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="Filter Inactive Applications?"
+        android:textColor="#000000"/>
+
+</LinearLayout>
+
