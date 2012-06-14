@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:stretchColumns="*">
+        <TableRow>
+            <Button
+                android:id="@+id/sounds_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Brakes" />
+            <Button
+                android:id="@+id/sounds_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Driving" />
+            <Button
+                android:id="@+id/sounds_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cop Siren" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/sounds_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crazy Laugh" />
+            <Button
+                android:id="@+id/sounds_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indian" />
+            <Button
+                android:id="@+id/sounds_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scream" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/sounds_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stomach 1" />
+            <Button
+                android:id="@+id/sounds_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stomach 2" />
+            <Button
+                android:id="@+id/sounds_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUV Horn" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

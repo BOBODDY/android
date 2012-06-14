@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- unselected state (default) -->
+    <item android:drawable="@drawable/tab_sound_unselected"
+          android:state_selected="false" />
+    <!-- selected state -->
+    <item android:drawable="@drawable/tab_sound_selected"
+          android:state_selected="true" />
+</selector>
