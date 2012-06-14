@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/asphalt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    	<TextView 
+    		android:text="Car:"
+    		android:textSize="25sp"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="10dip"
+    		android:padding="5dip"
+    		android:textStyle="bold" />
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dip">
+		    <ImageButton
+    	    	android:id="@+id/imageButton1"
+    	    	android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:src="@android:drawable/ic_menu_gallery" />
+		    <ImageView
+		        	android:id="@+id/carPic"
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content" />
+		</LinearLayout>
+
+    	<LinearLayout 
+    		android:orientation="horizontal"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="15dip">
+    		<TextView 
+    			android:text="Year: "
+    			android:textSize="20sp"
+    			android:textStyle="bold"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content" />
+    		<EditText
+    			android:id="@+id/yearEdit"
+    			android:hint="Year of car"
+    			android:layout_height="wrap_content"
+    			android:layout_width="fill_parent"
+    			android:inputType="number"
+    			android:lines="1" />
+    	</LinearLayout>
+    	<LinearLayout 
+    		android:orientation="horizontal"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="15dip">
+    		<TextView
+    			android:text="Make: "
+    			android:textSize="20sp"
+    			android:textStyle="bold"
+    			android:layout_height="wrap_content"
+    			android:layout_width="wrap_content" />
+    		<EditText
+    			android:id="@+id/makeEdit"
+    			android:hint="Make of car"
+    			android:layout_height="wrap_content"
+    			android:layout_width="fill_parent"
+    			android:lines="1" />
+    	</LinearLayout>
+    	<LinearLayout 
+    		android:orientation="horizontal"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="15dip">
+    		<TextView
+    			android:text="Model: "
+    			android:textSize="20sp"
+    			android:textStyle="bold"
+    			android:layout_height="wrap_content"
+    			android:layout_width="wrap_content" />
+    		<EditText
+    			android:id="@+id/modelEdit"
+    			android:hint="Model of car"
+    			android:layout_height="wrap_content"
+    			android:layout_width="fill_parent"
+    			android:lines="1" />
+    	</LinearLayout>
+    	<LinearLayout 
+    		android:orientation="horizontal"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginBottom="15dip">
+    		<TextView
+    			android:text="Odometer:  "
+    			android:textSize="20sp"
+    			android:textStyle="bold"
+    			android:layout_height="wrap_content"
+    			android:layout_width="wrap_content" />
+    		<EditText
+    			android:id="@+id/odoEdit"
+    			android:hint="Odometer reading"
+    			android:layout_height="wrap_content"
+    			android:layout_width="fill_parent"
+    			android:inputType="number"
+    			android:lines="1" />
+    	</LinearLayout>
+    	<LinearLayout
+    		android:layout_height="wrap_content"
+    		android:layout_width="match_parent" 
+    		android:layout_gravity="right">
+    		<Button
+    			android:layout_gravity="right"
+    			android:text="Cancel"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:id="@+id/car_cancel" />
+    		<Button
+    			android:layout_gravity="right"
+    			android:text="Save"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:id="@+id/car_save" />
+    	</LinearLayout>
+    </LinearLayout>
+    
+</ScrollView>

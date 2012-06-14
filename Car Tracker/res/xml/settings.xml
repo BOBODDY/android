@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+    	android:title="Default fuel units"
+    	android:key="fuel"
+    	android:entries="@array/fuel_list"
+    	android:entryValues="@array/fuel_list"
+    	android:defaultValue="Gallons" />
+    	
+    <ListPreference
+    	android:title="Default distance units"
+    	android:key="distance"
+    	android:entries="@array/distance_list"
+    	android:entryValues="@array/distance_list"
+    	android:defaultValue="Miles" />
+    	
+    <ListPreference
+    	android:title="Distance entry method"
+    	android:key="distEntry"
+    	android:entries="@array/distTitles"
+    	android:entryValues="@array/distValues"
+    	android:defaultValue="direct" />
+</PreferenceScreen>

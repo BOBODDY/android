@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10sp"
+	android:background="@drawable/asphalt">
+			<TextView
+				android:id="@+id/car_id"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="0sp" />
+			<TextView
+				android:id="@+id/car_year"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textSize="45sp" />
+			<TextView 
+				android:id="@+id/car_make"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="45sp"
+				android:textStyle="bold"
+				android:layout_below="@id/car_year" />
+			<TextView
+				android:id="@+id/car_model"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="45sp"
+				android:textStyle="bold"
+				android:layout_below="@id/car_make" />
+			<TextView
+				android:id="@+id/car_odo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="30sp"
+				android:layout_below="@id/car_model" />
+			<TextView
+				android:id="@+id/grr"
+				android:text=" miles"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="30sp"
+				android:layout_marginLeft="10dip"
+				android:layout_toRightOf="@id/car_odo"
+				android:layout_below="@id/car_model" />
+			<TextView
+				android:id="@+id/car_mpg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="40sp"
+				android:layout_below="@id/car_odo" />
+			<TextView
+				android:id="@+id/mpg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="35sp"
+				android:layout_marginLeft="10dip"
+				android:layout_toRightOf="@id/car_mpg"
+				android:layout_below="@id/grr" />
+			<Button
+				android:id="@+id/car_mpgbutton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Add mileage"
+				android:layout_below="@id/car_mpg" />
+</RelativeLayout>
+	

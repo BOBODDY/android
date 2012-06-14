@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_weight="1"
+  android:background="@drawable/asphalt">
+    <LinearLayout android:id="@+id/linear1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:text="" android:id="@+id/spacer" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        <TextView android:text="New odometer reading" android:id="@+id/mLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="25sp"></TextView>
+        <TextView android:text="Whole numbers only, please!" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        <EditText android:id="@+id/milesEdit" android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="numberDecimal" android:hint="Enter current odometer amount"></EditText>
+        <TextView android:text="Fuel used" android:id="@+id/gLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="25sp"></TextView>
+        <EditText android:id="@+id/fuelEdit" android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="numberDecimal" android:hint="Enter fuel used"></EditText>
+        
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        </LinearLayout>
+        
+        <Button android:text="Save" android:layout_marginTop="20dip" android:id="@+id/mpg_save" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="35sp"></Button>
+        <TextView android:text="" android:id="@+id/spacer" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    
+</ScrollView>

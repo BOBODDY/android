@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="30dip"
+  android:background="@drawable/asphalt">
+  
+  <LinearLayout
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center">
+  	
+  	<TextView
+  		android:text="Car Tracker"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_gravity="center"
+  		android:layout_marginBottom="20dip"
+  		android:textSize="35sp"
+  		android:textStyle="bold" />
+  	<Button
+  		android:text="Calculate One-Time MPG"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/main_mpg"
+  		android:layout_marginBottom="15dip" />
+  	<Button
+  		android:text="Cars"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/main_cars"
+  		android:layout_marginBottom="15dip" />
+  	<Button 
+  	    android:text="@string/nearMe"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:id="@+id/main_near"
+  	    android:layout_marginBottom="15dip" />
+  	<Button
+  		android:text="Settings"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:id="@+id/main_settings" />	
+  </LinearLayout>
+    
+</LinearLayout>

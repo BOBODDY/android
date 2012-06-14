@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:padding="10sp"
+	android:id="@+id/carItem">
+	<LinearLayout
+		android:id="@+id/topRow"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/rowid"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone" />
+		<TextView
+			android:id="@+id/year"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+		<TextView
+			android:id="@+id/yearspace"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" "
+			android:layout_toRightOf="@id/year"
+			android:textStyle="bold" />
+		<TextView
+			android:id="@+id/make"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:layout_toRightOf="@id/yearspace" />
+		<TextView
+			android:id="@+id/makespace"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" "
+			android:layout_toRightOf="@id/make"
+			android:textStyle="bold" />
+		<TextView
+			android:id="@+id/model"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:layout_toRightOf="@id/makespace" />
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/bottomRow"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_below="@id/topRow"
+		android:orientation="horizontal">
+		<TextView 
+			android:id="@+id/odo_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/topRow"
+			android:text="Odometer reading: "
+			android:textSize="15sp"
+			android:textStyle="bold" />
+		<TextView
+			android:id="@+id/odo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/odo_label"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+	</LinearLayout>
+	
+	
+</RelativeLayout>

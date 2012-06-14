@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/asphalt">
+  
+  <TextView 
+  	android:text="Send Text"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:textSize="35sp"
+  	android:layout_marginTop="15dip"
+  	android:layout_marginRight="5dip" />
+  	
+  <TextView
+  	android:text="Enter Phone Number:"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:textSize="20sp"
+  	android:layout_marginTop="20dip"
+  	android:layout_marginBottom="5dip" />
+  	
+  <EditText
+  	android:id="@+id/text_num"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:hint="Phone Number"
+  	android:inputType="number" />
+    
+</LinearLayout>

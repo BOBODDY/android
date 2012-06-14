@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="milesLabel">Distance traveled (m/km)</string>
+    <string name="app_name">Car Tracker</string>
+    <string name="gallonsLabel">Fuel used (g/l)</string>
+    <string name="mileage">Mileage: </string>
+    <string name="mileageView"></string>
+    <string name="mpg">mpg</string>
+    <string name="settings_label">Settings</string>
+    <string name="settings_shortcut">s</string>
+    <string name="nearMe">Near Me</string>
+    
+    <string-array name="camera_list">
+        <item>Take a new picture</item>
+        <item>Pick from Gallery</item>
+    </string-array>
+    
+    <string-array name="fuel_list">
+        <item>Gallons</item>
+        <item>Liters</item>
+    </string-array>
+    
+    <string-array name="distance_list">
+    	<item>Miles</item>
+    	<item>Kilometers</item>
+    </string-array>
+    
+    <string-array name="options">
+    	<item>Delete</item>
+    </string-array>
+    
+    <string-array name="share">
+    	<item>Text</item>
+    </string-array>
+    
+    <string-array name="distTitles">
+    	<item>Odometer</item>
+    	<item>Distance of trip</item>
+    </string-array>
+    
+    <string-array name="distValues">
+    	<item>odo</item>
+    	<item>direct</item>
+    </string-array>
+</resources>
