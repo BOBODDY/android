@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">CricketTemp</string>
+    <string name="hello_world">Hello</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="button_click_me">Click Me!</string>
+    <string name="button_reset">Reset</string>
+
+</resources>
