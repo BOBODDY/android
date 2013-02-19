@@ -8,7 +8,7 @@
     <string name="newRound">New Round</string>
     <string name="player1">Player 1</string>
     <string name="player2">Player 2</string>
-    
+
     <string-array name="numbers">
         <item>1</item>
         <item>2</item>
@@ -31,5 +31,8 @@
         <item>19</item>
         <item>20</item>
     </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_new_round">NewRound</string>
 
 </resources>

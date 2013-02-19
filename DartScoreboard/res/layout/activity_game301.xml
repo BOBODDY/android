@@ -26,6 +26,13 @@
                 android:text="@string/player1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:gravity="center" />
+            
+            <TextView
+                android:id="@+id/p1Score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -40,6 +47,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/player2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center" />
+            
+            <TextView
+                android:id="@+id/p2Score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
                 android:gravity="center" />
         </LinearLayout>
     </LinearLayout>

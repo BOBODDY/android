@@ -1,6 +1,7 @@
 package com.boboddy.dartscoreboard;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
@@ -8,8 +9,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Game301 extends Activity implements OnClickListener{
+	
+	TextView p1Score,p2Score;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,9 @@ public class Game301 extends Activity implements OnClickListener{
 		
 		Button newRound = (Button)findViewById(R.id.newRoundButton);
 		newRound.setOnClickListener(this);
+		
+		p1Score = (TextView)findViewById(R.id.p1Score);
+		p2Score = (TextView)findViewById(R.id.p2Score);
 	}
 
 	@Override
@@ -47,7 +54,8 @@ public class Game301 extends Activity implements OnClickListener{
 	}
 	
 	public void onClick(View v) {
-		
+		Intent newRound = new Intent(getApplicationContext(),NewRoundActivity.class);
+		startActivity(newRound);
 	}
 
 }

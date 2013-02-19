@@ -30,6 +30,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="MainActivity" />
         </activity>
+        <activity
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:name="com.boboddy.dartscoreboard.NewRoundActivity"
+            android:label="@string/title_activity_new_round" >
+        </activity>
     </application>
 
 </manifest>
