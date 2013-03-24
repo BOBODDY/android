@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhysicsEngine</string>
+    <string name="action_settings">Settings</string>
+    <string name="physics">physics!</string>
+    <string name="title_activity_physics">Physics</string>
+
+</resources>
