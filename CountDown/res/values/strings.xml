@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Count Down</string>
+    <string name="action_settings">Settings</string>
+    <string name="dateGET">Date GET</string>
+    <string name="date" />
+    <string name="title_activity_countdown">CountdownActivity</string>
+    <string name="start">Start Count Down</string>
+
+</resources>
