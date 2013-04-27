@@ -1,6 +1,7 @@
 package com.boboddy.countdown;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,6 +23,15 @@ public class MainActivity extends Activity implements OnDateSetListener,OnClickL
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//Do something if the app hasn't been opened before
+		boolean firstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstRun",true);
+		if(firstRun) {
+			//First time the app is opened
+			new AlertDialog.Builder(this).setTitle("First run").setMessage("This is the first time the app has been opened").setNeutralButton("OK",null).show();
+			getSharedPreferences("PREFERENCE",MODE_PRIVATE).edit().putBoolean("firstRun",false).commit();
+			
+		}
 		
 		date = (TextView) findViewById(R.id.date);
 		
