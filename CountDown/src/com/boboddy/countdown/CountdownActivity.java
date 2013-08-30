@@ -28,9 +28,6 @@ public class CountdownActivity extends Activity {
 		
 		countdown = (TextView)findViewById(R.id.countdown);
 		
-		new AsyncTask<Integer, Integer, Boolean>() {
-			
-		}
 	}
 	
 	@Override
